@@ -5,10 +5,23 @@ site_url: https://kurtjacobson.github.io/Test-Repo/
 repo_url: https://github.com/KurtJacobson/Test-Repo
 repo_name: GitHub
 
-theme: readthedocs
+theme: 'material'
 
 pages:
 - Home: index.md
 - Installation:
   - Installing: installation.md
+  - Testing: test.md
+- Features:
+  - Status Monitor: status monitoring.md
+
+
+extra:
+  palette:
+    primary: 'gray'
+    accent: 'light blue'
+
+  social:
+    - type: 'github'
+      link: 'https://github.com/kurtjacobson'
 
