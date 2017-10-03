@@ -4,7 +4,7 @@ For full documentation visit [mkdocs.org][1].
 
 [1]: http://mkdocs.org
 
-## Commands
+## Commands and a test!
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
