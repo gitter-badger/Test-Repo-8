@@ -23,5 +23,5 @@ markdown_extensions:
 
 extra:
   palette:
-    primary: Gray
-    accent: Indigo
+    primary: Grey
+    accent: Grey
