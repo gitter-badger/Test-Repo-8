@@ -1,7 +1,7 @@
 site_name: Test-Repo
 site_description: For testing MkDocs
 site_url: https://kurtjacobson.github.io/Test-Repo/
-site_dir: master
+site_dir: site
 
 repo_name: KurtJacobson/Test-Repo
 repo_url: https://github.com/KurtJacobson/Test-Repo/
