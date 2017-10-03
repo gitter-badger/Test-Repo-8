@@ -1,27 +1,27 @@
-site_name: Test-Doks
-site_description: Testing MkDocs
+site_name: Test-Repo
+site_description: For testing MkDocs
 site_url: https://kurtjacobson.github.io/Test-Repo/
+site_dir: master
 
-repo_url: https://github.com/KurtJacobson/Test-Repo
-repo_name: GitHub
+repo_name: KurtJacobson/Test-Repo
+repo_url: https://github.com/KurtJacobson/Test-Repo/
 
-theme: 'material'
+theme: material
 
 pages:
 - Home: index.md
 - Installation:
   - Installing: installation.md
-  - Testing: test.md
-- Features:
-  - Status Monitor: status monitoring.md
+- Modules:
+  - Status Monitor: status_monitor.md
+- Documentation:
+  - Building Docs: building_docs.md
 
+markdown_extensions:
+  - admonition
+  - codehilite(linenums=true)
 
 extra:
   palette:
     primary: 'gray'
-    accent: 'light blue'
-
-  social:
-    - type: 'github'
-      link: 'https://github.com/kurtjacobson'
-
+    accent: 'indigo'
