@@ -1,0 +1,54 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\n1\n2\n3\n4\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-mkdocs", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Welcome to MkDocs"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "1\n2\n3\n4 mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/installation/", 
+            "text": "", 
+            "title": "Installing"
+        }, 
+        {
+            "location": "/status_monitor/", 
+            "text": "Status Monitor\n\n\nStatus.py monitors the linuxcnc.status attributes and emits GObject signals on a value change. Python scripts can connect a callback to these signals to get status updates without having to periodically poll the status channel themselves. This is referred to as event-driven programming, and reduces the load on the status channel while making it simpler for python scripts to get status updates from linuxcnc.\n\n\n\n\nNote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nSyntax\n\n\nstatus.on_value_changed(\nattribute\n, \ncallback\n)\n\n\nWhere \nattribute\n is any \nlinuxcnc.stat\n attribute and \ncallback\n is the method to be called when the value of that attribute changes.\n\n\nExamples\n\n\nHere is a basic example that prints the tool number when the \nlinuxcnc.stat.tool_in_spindle\n attribute changes.\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n#!/usr/bin/env python\n\n\n\nimport\n \nstatus.Status\n\n\n\nself\n.\nstatus\n \n=\n \nStatus\n\n\n\n# Connect \nupdate_tool\n callback to \ntool_in_spindle\n changed signal\n\n\nself\n.\nstatus\n.\non_value_changed\n(\ntool_in_spindle\n,\n \nself\n.\nupdate_tool\n)\n\n\n\nself\n.\nupdate_tool\n(\nwidget\n,\n \ntool_num\n):\n\n    \nprint\n \ntool_num", 
+            "title": "Status Monitor"
+        }, 
+        {
+            "location": "/status_monitor/#status-monitor", 
+            "text": "Status.py monitors the linuxcnc.status attributes and emits GObject signals on a value change. Python scripts can connect a callback to these signals to get status updates without having to periodically poll the status channel themselves. This is referred to as event-driven programming, and reduces the load on the status channel while making it simpler for python scripts to get status updates from linuxcnc.   Note  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
+            "title": "Status Monitor"
+        }, 
+        {
+            "location": "/status_monitor/#syntax", 
+            "text": "status.on_value_changed( attribute ,  callback )  Where  attribute  is any  linuxcnc.stat  attribute and  callback  is the method to be called when the value of that attribute changes.", 
+            "title": "Syntax"
+        }, 
+        {
+            "location": "/status_monitor/#examples", 
+            "text": "Here is a basic example that prints the tool number when the  linuxcnc.stat.tool_in_spindle  attribute changes.   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 #!/usr/bin/env python  import   status.Status  self . status   =   Status  # Connect  update_tool  callback to  tool_in_spindle  changed signal  self . status . on_value_changed ( tool_in_spindle ,   self . update_tool )  self . update_tool ( widget ,   tool_num ): \n     print   tool_num", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/building_docs/", 
+            "text": "", 
+            "title": "Building Docs"
+        }
+    ]
+}
